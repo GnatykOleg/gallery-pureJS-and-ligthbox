@@ -42,3 +42,18 @@
 .gallery__link:hover {
   cursor: zoom-in;
 }
+
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+ a:hover,
+ a:focus {
+  color: blue;
+ }
+
+ ul {
+  list-style: none;
+ }
