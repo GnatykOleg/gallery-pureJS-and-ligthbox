@@ -1,25 +1,15 @@
-<b>Задание 1 - галерея изображений </b>
+# IMAGE GALLERY
 
-Создай галерею с возможностью клика по её элементам и просмотра полноразмерного изображения в модальном окне
-Выполняй это задание в файлах 01-gallery.html и 01-gallery.js. Разбей его на несколько подзадач:
+### 1. A gallery has been created with the ability to click on its elements and view a full-sized image in a modal window.
 
-Создание и рендер разметки по массиву данных galleryItems и предоставленному шаблону элемента галереи.
-Реализация делегирования на div.gallery и получение url большого изображения.
-Подключение скрипта и стилей библиотеки модального окна basicLightbox. Используй CDN сервис jsdelivr и добавь в проект ссылки на минифицированные (.min) файлы библиотеки.
-Открытие модального окна по клику на элементе галереи. Для этого ознакомься с документацией и примерами.
-Замена значения атрибута src элемента <img> в модальном окне перед открытием. Используй готовую разметку модального окна с изображением из примеров библиотеки basicLightbox.
+### 2. Created and rendered markup based on the gallery items data array and provided gallery element template.
 
-Разметка элемента галереи
-Ссылка на оригинальное изображение должна храниться в data-атрибуте source на элементе <img>, и указываться в href ссылки. Не добавляй другие HTML теги или CSS классы кроме тех, что есть в этом шаблоне.
-Обрати внимание на то, что изображение обернуто в ссылку, а значит при клике по умолчанию пользователь будет перенаправлен на другую страницу. Запрети это поведение по умолчанию.
+### 3. The script and styles of the basicLightbox modal window library are connected.
 
-<b>Задание 2 - библиотека SimpleLightbox</b>
+### 4. Opening a modal window by clicking on a gallery element.
 
-Сделай такую же галерею как в первом задании, но используя библиотеку SimpleLightbox, которая возьмет на себя обработку кликов по изображениям, открытие и закрытие модального окна, а также пролистывание изображений при помощи клавиатуры. Посмотри демо видео работы галереи с подключенной библиотекой.
+### 5. Changed the value of the src attribute of the <img> element in the modal window before opening.
 
-Выполняй это задание в файлах 02-lightbox.html и 02-lightbox.js. Разбей его на несколько подзадач:
+# IMAGE GALLERY WITH SIMPLELIGHTBOX LIBRARY
 
-Создание и рендер разметки по массиву данных galleryItems и предоставленному шаблону элемента галереи. Используй готовый код из первого задания.
-Подключение скрипта и стилей библиотеки используя CDN сервис cdnjs. Необходимо добавить ссылки на два файла: simple-lightbox.min.js и simple-lightbox.min.css.
-Инициализация библиотеки после того как элементы галереи созданы и добавлены в div.gallery. Для этого ознакомься с документацией SimpleLightbox - в первую очередь секции «Usage» и «Markup».
-Посмотри в документации секцию «Options» и добавь отображение подписей к изображениям из атрибута alt. Пусть подпись будет снизу и появляется через 250 миллисекунд после открытия изображения.
+### 1. The same gallery is made, but the SimpleLightbox library is used, which will take care of processing clicks on images, opening and closing a modal window, and scrolling through images using the keyboard.

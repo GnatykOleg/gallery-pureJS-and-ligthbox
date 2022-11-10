@@ -20,7 +20,9 @@ function createGallery(galleryItems) {
     .join('');
 }
 
-const fN = event => {
+const instance = basicLightbox.create(`<img src="" alt="">`);
+
+const onClick = event => {
   event.preventDefault();
   if (event.target.classList.contains('gallery')) {
     return;
@@ -32,6 +34,4 @@ const fN = event => {
   instance.show();
 };
 
-const instance = basicLightbox.create(`<img src="" alt="">`);
-
-gallery.addEventListener('click', fN);
+gallery.addEventListener('click', onClick);

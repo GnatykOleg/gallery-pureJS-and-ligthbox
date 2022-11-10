@@ -1,12 +1,10 @@
 import { galleryItems } from './gallery-items.js';
 
-console.log(galleryItems);
-
 const galleryContainerEl = document.querySelector('.gallery');
 const imagesMarkup = createItemsMarkup(galleryItems);
 galleryContainerEl.insertAdjacentHTML('beforeend', imagesMarkup);
 
-function createItemsMarkup(item) {
+function createItemsMarkup() {
   return galleryItems
     .map(({ preview, original, description }) => {
       return `
